@@ -1,0 +1,32 @@
+Comandos de git bash
+
+cd (change directory)
+
+cd / ir a la raiz.
+
+ls (list)
+
+ls -al (mostrar también archivos ocultos)
+
+ls -l (lusta todos los archivos)
+
+ls -a (muestra los archivos en bloque)
+
+clear 
+
+crlt+ L (clear)
+
+cd .. (regresar a la carpeta anterior)
+
+windows no distingue enre mayusculas y minúsculas. Mac y linux sí hacen esta distinción.
+
+con tab, se autocompleta
+
+cd, le damos donde queramos que esten nuestros archivos cuando estámos ahi nos aparece ~
+
+pwd es para que nos muestre la ruta donde estamos parados.
+
+touch documento.txt (crea un docuemnto vacio de texto plano)
+
+mkdir Nombre (crea una carpeta en la ruta especificada)
+
