@@ -6,4 +6,4 @@ Edad 29 años
 
 Nombre de mascota: Alcachofa
 
-profesión: por definir
+profesión: programador
