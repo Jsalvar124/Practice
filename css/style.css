@@ -15,3 +15,13 @@ body{
     margin: auto;
 }
 
+#header{
+    background: #36A;
+    font-size: 20px;
+    color:beige;
+    margin: 0;
+    padding: 0.5em;
+    box-shadow: 0px 2px 20px 0px black;
+
+}
+
