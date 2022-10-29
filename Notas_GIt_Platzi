@@ -30,3 +30,50 @@ touch documento.txt (crea un docuemnto vacio de texto plano)
 
 mkdir Nombre (crea una carpeta en la ruta especificada)
 
+cat (mostrar en consola el contenido de un archivo)
+
+history (muestra el historial de comandos de la terminal)
+
+para acceder a un comando anterior, se usa !# donde # es el número del comando.
+
+rm documento (remove file)
+
+comando --help (para cualquier comando)
+
+
+git init (crear un nuevo control de versiones para la carpeta en cuestión)
+
+si desde la terminal de git bash, escribimos code, nos abrirá una ventana de VS Code
+
+git add filename.ext (añade el archivo a staged, para ser comiteado)
+
+git rm --cached filename.ext  (saca el archivo del estado staged, es como deshacer el add)
+
+Configuración del GIT
+
+git config --list (muestra las configuraciónes hasta el momento en la maquina)
+
+un solo guion, se usan iniciales.
+
+-- es usar palabras completas
+
+git config --global user.name "Julian Salva"
+
+git config --global user.email "jsalvar124@gmail.com"
+
+code filename.ext (abre el archivo para edición)
+
+git show filename.ext (muestra el historial de cambios) para salir ESC, luego shift+z+z
+
+git diff TagVersionVieja TagVersionNueva (muestra las diferencias entre dos commits culaquiera)
+
+
+
+
+
+
+
+
+
+
+
