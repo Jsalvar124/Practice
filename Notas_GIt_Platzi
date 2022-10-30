@@ -63,9 +63,90 @@ git config --global user.email "jsalvar124@gmail.com"
 
 code filename.ext (abre el archivo para edición)
 
+
+
 git show filename.ext (muestra el historial de cambios) para salir ESC, luego shift+z+z
 
 git diff TagVersionVieja TagVersionNueva (muestra las diferencias entre dos commits culaquiera)
+
+git log filename.ext (muestra el historial de commits de un archivo.)
+
+q para salir del LOG
+
+PARA VOLVER A UNA VERSION ANTERIOR
+hay dos opciones, la soft y la hard, la que más se usa es la hard, pero es peligrosa, porque elminia toda la info después de cierto punto
+
+git reset TAG_DEL_COMMIT --hard
+
+git reset TAG_DEL_COMMIT --soft
+
+git checkout TAG_DEL_COMMIT filename.txt (se trae el archivo especifico, del tag del comit mencionado)
+
+git checkout master filename.txt (actualiza el archivo a su versión final nuevamente, la útlima commiteada en el master.)
+
+entonces, puedo traerme una versión anterrior, con checkout TAG_DEL_COMMIT archivo.ext, luego editarlo, y volvero a commitar a la rama master.
+
+Con git reset volvemos al pasado sin la posibilidad de volver al futuro. Borramos la historia y la debemos sobreescribir. No hay vuelta atrás.
+
+Este comando es muy peligroso y debemos emplearlo solo en caso de emergencia. Recuerda que debemos usar alguna de estas dos opciones
+
+git reset --soft Borramos todo el historial y los registros de Git pero guardamos los cambios que tengamos en Staging, así podemos aplicar las últimas actualizaciones a un nuevo commit.
+git reset --hard Borra todo. Todo todito, absolutamente todo. Toda la información de los commits y del área de staging se borra del historial.
+
+
+git reset HEAD  (sacar archivos del área de staging)
+
+
+directorio de trabajo: carpeta local de tu pc
+
+preparación o staging: (se envia con git add un archivo a este limbo, en la memoria del pc)
+
+Repositorio local git commit: ( se envía al .git, que almacena los cambios y guarda la version definitiva)
+
+Repositorio remoto: no se encuentra en el ordenador, (GitHub) alli se trabaja con el equipo. 
+
+git pull = git fetch + git merge
+
+el HEAD es el lugar donde estoy trabajando, cuando dice HEAD -> master es que estoy en la rama master.
+
+Ramas
+
+para crear una rama,  
+
+git branch nombreRama  (HEAD -> master, header) una vez creada la rama aparece con git show.
+
+para cambiarse a dicha rama
+
+git checkout nombreRama
+
+git commit -am es una forma corta de hacer add y añadir mensaje al mismo tiempo.
+
+para ingresar al editor de texto git commit -a
+
+una vez adentro ESC i para modificar, y shift + z + z para enviar.
+
+git checkout master me devuelve a la rama principal y actualiza todos los archivos al estado de ese commit, si hice cambios en otra rama, no se ven en este checkout.
+
+git merge nombreRama (ANTES DE HACER MERGE, ASEGURARSE DE ESTAR PARADO EN LA RAMA MASTER)
+
+se añade comentario y se comitea, porque un merge es basicamente un comit.
+
+si no hay conflictos, pues se fusionan los archivos.
+
+git remote add URLGITHUB
+
+git remote (muestra si hay un origin)
+
+git remote -v (muestra el link asociado)
+
+
+
+
+
+
+
+
+
 
 
 
